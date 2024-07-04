@@ -1,0 +1,113 @@
+###############################
+#####     CUSTOM USER     #####
+###############################
+
+###
+POST http://127.0.0.1:8000/api/signup/
+Content-Type: application/json
+
+{ "username": "test19", "first_name": "test", "password": "test", "gender": 1 }
+
+###
+POST http://127.0.0.1:8000/api/login/
+Content-Type: application/json
+
+{ "username": "test18", "password": "test" }
+
+###
+PUT http://127.0.0.1:8000/api/update_user/
+Content-Type: application/json
+Authorization: Token 62a39b399a764d5ca8719468da159b3edc727504
+
+{ "first_name": "test test", "password": "test test" }
+
+###
+DELETE http://127.0.0.1:8000/api/delete_user/
+Content-Type: application/json
+Authorization: Token 62a39b399a764d5ca8719468da159b3edc727504
+
+###############################
+#######     IBADAT     ########
+###############################
+
+###
+GET http://127.0.0.1:8000/api/get_ibadaat/
+Content-Type: application/json
+Authorization: Token fb2dc5e629e197cb002ea4dbd5e5340ca6b3032b
+
+###
+POST http://127.0.0.1:8000/api/create_ibadat/
+Content-Type: application/json
+Authorization: Token fb2dc5e629e197cb002ea4dbd5e5340ca6b3032b
+
+{ "name": "Namazz" }
+
+###
+PUT http://127.0.0.1:8000/api/update_ibadat/9/
+Content-Type: application/json
+Authorization: Token fb2dc5e629e197cb002ea4dbd5e5340ca6b3032b
+
+{ "name": "Namaaaaaz" }
+
+###
+DELETE http://127.0.0.1:8000/api/delete_ibadat/9/
+Content-Type: application/json
+Authorization: Token fb2dc5e629e197cb002ea4dbd5e5340ca6b3032b
+
+###############################
+########     SCALE     ########
+###############################
+
+###
+GET http://127.0.0.1:8000/api/get_scale/2/
+Content-Type: application/json
+Authorization: Token fb2dc5e629e197cb002ea4dbd5e5340ca6b3032b
+
+###
+POST http://127.0.0.1:8000/api/create_scale/2/
+Content-Type: application/json
+Authorization: Token fb2dc5e629e197cb002ea4dbd5e5340ca6b3032b
+
+{ "name": "Prayer in Masjidddd", "color": "#616161" }
+
+###
+PUT http://127.0.0.1:8000/api/update_scale/2/
+Content-Type: application/json
+Authorization: Token fb2dc5e629e197cb002ea4dbd5e5340ca6b3032b
+
+{ "name": "Prayer in Masjid", "color": "#616161" }
+
+###
+DELETE http://127.0.0.1:8000/api/delete_scale/4/
+Content-Type: application/json
+Authorization: Token fb2dc5e629e197cb002ea4dbd5e5340ca6b3032b
+
+{ "name": "Prayer in Masjid", "color": "#616161" }
+
+###############################
+#####     IBADAT ITEM     #####
+###############################
+
+###
+GET http://127.0.0.1:8000/api/get_ibadat_item/2/
+Content-Type: application/json
+Authorization: Token fb2dc5e629e197cb002ea4dbd5e5340ca6b3032b
+
+###
+POST http://127.0.0.1:8000/api/create_ibadat_item/2/
+Content-Type: application/json
+Authorization: Token fb2dc5e629e197cb002ea4dbd5e5340ca6b3032b
+
+{ "name": "Fajar", "point": 2, "score": 3 }
+
+###
+PUT http://127.0.0.1:8000/api/update_ibadat_item/2/
+Content-Type: application/json
+Authorization: Token fb2dc5e629e197cb002ea4dbd5e5340ca6b3032b
+
+{ "name": "Zohar", "point": 2, "score": 3 }
+
+###
+DELETE http://127.0.0.1:8000/api/delete_ibadat_item/2/
+Content-Type: application/json
+Authorization: Token fb2dc5e629e197cb002ea4dbd5e5340ca6b3032b
